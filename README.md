@@ -7,5 +7,5 @@ For customers who would want to renew the cert in advance we have an python scri
   App hosting enabled on C9800 WLAN controller
   Guest shell enabled 
 For more information on how to enable guest shell on the C9800 wireless LAN controller. Refer the following URL
-[Guest Shell on IOS XE platforms] (https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/prog/configuration/173/b_173_programmability_cg/guest_shell.html)
+[Guest Shell on IOS XE platforms](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/prog/configuration/173/b_173_programmability_cg/guest_shell.html)
 
