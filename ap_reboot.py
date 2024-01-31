@@ -48,7 +48,7 @@ print ('Based on user input,AP with cert expire time of less than\
 ap_summ=cli("show ap summary")
 ap_list= re.findall('(^\S+)\s+\d+',ap_summ,re.MULTILINE)
 
-
+#extract the expiry date of the certificate 
 for i in ap_list:
     ap_expiry_1=cli("sh ap name {}  config general | in Expi".format(i))
     try:
