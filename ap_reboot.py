@@ -18,7 +18,7 @@ def ap_reload(ap_dct,time):
         time_difference = date_object - current_time
         if time_difference.days<=time:
             cli("clear ap config {}".format(k))
-            print('Config cleared for {} Since expirt diff \
+            print('Config cleared for {} Since expiry diff \
 is {}\n'.format(k,time_difference.days))
         else:
             print('Config not cleared for {} since expiry diff is {} days\
