@@ -60,6 +60,11 @@ event manager applet check-ap-expiry
  action 2.0 syslog msg " Starting AP expiry check script"
  action 3.0 cli command "guestshell run python3 /flash/guest-share/ap_reboot.py -d  1"
 ```
+To define the user threshold for the cert renewal add it as part of the argument to the script
+```
+guestshell run python3 /flash/guest-share/ap_reboot.py -d <no_of_days>
+```
+
 ## Log File
 
 the log file is generated whenever the script is executed and is placed in the flash.
