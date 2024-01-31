@@ -53,7 +53,7 @@ Directory of bootflash:/guest-share/
 ```
 Invoke the script using EEM, and modify the cron entry as per the user's need.
 ```
-event manager directory user policy "flash:/guest-share"
+
 event manager applet check-ap-expiry
  event timer cron cron-entry "* * * * *"
  action 1.0 cli command "enable"
