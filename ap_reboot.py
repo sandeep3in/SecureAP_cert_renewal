@@ -17,12 +17,12 @@ def ap_reload(ap_dct,time):
         # Calculate the difference between the two dates
         time_difference = date_object - current_time
         if time_difference.days<=time:
-            cli("clear ap config {}".format(k))
-            print('Config cleared for {} Since expiry diff \
-is {}\n'.format(k,time_difference.days))
+            #cli("clear ap config {}".format(k))
+            print('Config cleared for {} since expiry diff \
+is {} days\n'.format(k,time_difference.days))
         else:
             print('Config not cleared for {} since expiry diff is {} days\
-'.format(k,time_difference.days))
+\n'.format(k,time_difference.days))
 
 
 old_stdout=sys.stdout
@@ -48,7 +48,7 @@ print ('Based on user input,AP with cert expire time of less than\
 ap_summ=cli("show ap summary")
 ap_list= re.findall('(^\S+)\s+\d+',ap_summ,re.MULTILINE)
 
-#extract the expiry date of the certificate 
+
 for i in ap_list:
     ap_expiry_1=cli("sh ap name {}  config general | in Expi".format(i))
     try:
